@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class PickUpItem : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        
+        RaycastHit hit;
+
+        if (Physics.Raycast(transform.position, transform.forward, 4f)) {
+
+        }
     }
 }
