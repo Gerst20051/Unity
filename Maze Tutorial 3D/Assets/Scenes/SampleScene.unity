@@ -217,7 +217,7 @@ GameObject:
   - component: {fileID: 98666049}
   m_Layer: 0
   m_Name: Coin (1)
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -648,6 +648,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c17f15271f824f15b21ad52ff37b0d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coin: {fileID: 274449748}
 --- !u!1 &189891909
 GameObject:
   m_ObjectHideFlags: 0
@@ -844,7 +845,7 @@ GameObject:
   - component: {fileID: 274449749}
   m_Layer: 0
   m_Name: Coin
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1382,7 +1383,7 @@ GameObject:
   - component: {fileID: 626183656}
   m_Layer: 0
   m_Name: Coin (4)
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1929,7 +1930,7 @@ GameObject:
   - component: {fileID: 967128893}
   m_Layer: 0
   m_Name: Coin (3)
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2807,7 +2808,7 @@ GameObject:
   - component: {fileID: 1713017540}
   m_Layer: 0
   m_Name: Coin (2)
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
