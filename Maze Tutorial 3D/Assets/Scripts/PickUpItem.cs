@@ -4,16 +4,21 @@ using UnityEngine;
 
 public class PickUpItem : MonoBehaviour
 {
-    public GameObject coin;
+    public int score = 0;
 
     void Update()
     {
         RaycastHit hit;
 
         if (Physics.Raycast(transform.position, transform.forward, out hit, 4f)) {
-            if (hit.transform.tag == "Coin") {
-                Destroy(coin);
+            if (hit.transform.GetComponent<Coin>().isCoin == true && Input.GetKey("e")) {
+                score++;
+                Destroy(hit.transform.gameObject);
             }
+        }
+
+        if (score == 5) {
+            GetComponent<PlayerMove>().enabled = false;
         }
     }
 }
