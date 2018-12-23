@@ -5,6 +5,7 @@ using UnityEngine;
 public class PickUpItem : MonoBehaviour
 {
     public int score = 0;
+    public GameObject winMsg;
 
     void Update()
     {
@@ -19,6 +20,7 @@ public class PickUpItem : MonoBehaviour
 
         if (score == 5) {
             GetComponent<PlayerMove>().enabled = false;
+            winMsg.SetActive(true);
         }
     }
 }
