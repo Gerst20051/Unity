@@ -6,8 +6,27 @@ public class PlayerMove : MonoBehaviour
 {
     public float moveSpeed = 5f;
 
+    public float mouseSensX = 1f;
+    public float mouseSensY = 1f;
+
+    float verticalLookRotation;
+
+    Transform mainCam;
+
+    void Awake()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        mainCam = Camera.main.transform;
+    }
+
     void Update()
     {
+        transform.Rotate(Vector3.up * Input.GetAxis("Mouse X") * mouseSensX);
+        verticalLookRotation += Input.GetAxis("Mouse Y") * mouseSensY;
+        verticalLookRotation = Mathf.Clamp(verticalLookRotation, -80, 80);
+        mainCam.localEulerAngles = Vector3.left * verticalLookRotation;
+
         // Input from user
         if (Input.GetKey("w")) {
             transform.position += transform.forward * Time.deltaTime * moveSpeed;
